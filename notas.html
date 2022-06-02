@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notas Alunos</title>
+    <link rel="stylesheet" href="notas.css">
+</head>
+<body onload="carregar()">
+    <header>
+    <h1>EEB JOAO GUIMARAES CABRAL</h1>
+    <hr>
+    <h2>ALUNO(A):<h2>
+    </header>
+
+    <main>
+        <div id="aluno">Não definido...</div>
+        <h2>TURMA:</h2>
+        <div id="turma">Não definido...</div><br><hr>
+
+      <h2 style="text-decoration: underline;">Somar a média</h2><br>
+        
+      <div id="somar">
+         <label> Disciplina:
+             <br><input type="text" id="disciplina">
+         </label><br>
+         <label> Nota Trimestre:
+        <br><input type="number" id="nota">
+         </label><br>
+         <input type="button" value="Calcular Média" onclick="somar()" id="botao">
+        </div>
+        <div id="res"></div>
+    </main>
+
+
+
+        <script>
+            let nomeAluno = window.prompt('Qual é seu nome?') 
+            let aluno = window.document.getElementById('aluno')
+            aluno.innerHTML = nomeAluno
+            
+            let turma = window.prompt('Qual é sua turma?')
+            let Turma = window.document.getElementById('turma')
+            Turma.innerHTML = turma
+
+            function somar() {
+            let disciplina = window.document.getElementById('disciplina')
+            let nota = window.document.getElementById('nota')
+         let res = window.document.getElementById('res')
+         let disciplina2 =( disciplina.value)
+         let nota2 = (nota.value)
+
+                    res.innerText = `Na disciplina de ${disciplina2}, você tirou ${nota2}!`
+            }
+        
+        </script>
+</body>
+</html>
