@@ -87,3 +87,19 @@ div#res:hover{
     color: yellow;
     transition-duration: 0.3s;
 }
+
+footer{
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 1.3em;
+   text-shadow: 1px 1px 1px black;
+   margin-top: 100px;
+}
+
+a{
+    color: white;
+}
+a:hover{
+    color: rgb(107, 107, 107);
+    transition-duration: 0.3s;
+}
