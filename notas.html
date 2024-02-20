@@ -6,11 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Notas Alunos</title>
     <link rel="stylesheet" href="notas.css">
-    <link rel="shortcut icon" href="icon-JGC.jpg" type="image/x-icon">
+    <link rel="shortcut icon" href="iconJGC.jpg" type="image/x-icon">
 </head>
 <body>
     <header>
     <h1>EEB JOAO GUIMARAES CABRAL</h1>
+    <img src="iconJGC.jpg" alt="" width="100px">
     <hr>
     <h2>ALUNO(A):<h2>
     </header>
@@ -58,7 +59,7 @@
                     res.innerText = `Na disciplina de ${disciplina2}, você tirou ${nota2}!`
                 if (nota2 >= 6) {
                     let media = window.document.getElementById('media')
-                    media.innerHTML = 'Você ficou acima da média 6, parabens!'
+                    media.innerHTML = 'Você ficou acima da média 6, parabéns!'
                     } else {
                         let media = window.document.getElementById('media') 
                         media.innerHTML = 'Você não alcançou a média 6, estudar mais!'
